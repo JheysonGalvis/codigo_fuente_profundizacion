@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda virtual</title>
+    <link rel="stylesheet" type="text/css" href="estilos/style.css">
+</head>
+<body>
+
+    <!-- Menú de navegación superior -->
+    <div id="menuNav">
+        <a href="#">Inicio</a>
+        <a href="#">Quiénes somos?</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <h1>Tu Tienda virtual</h1>
+
+    <a href="#" target="_blank">Visita nuestro stand virtual</a>
+
+    <p>La tienda virtual está al servicio de la comunidad nacional e internacional, atendida por sus propietarios: estudiante1, estudiante2, estudiante3, estudiante4 y estudiante5</p>
+
+    <!-- Imágenes de los propietarios -->
+    <img src="imagenes/estudiante1.jpg" alt="propietaria nombre 1" width="160" height="164">
+    <img src="imagenes/estudiante2.jpeg" alt="estudiante1" width="160" height="164">
+    <img src="images/estudiante4.jpg" alt="estudiante4" width="160" height="164">
+    <img src="images/estudiante5.jpg" alt="estudiante5" width="160" height="164">
+
+    <h2>Sección de Calzado</h2>
+    <p>En esta sección encontrarás diversidad de calzado para todas las edades, géneros, gustos, tipo, deportes, etc.</p>
+
+    <h3 id="Zapatos Correr">Zapatillas para correr</h3>
+    
+    <p>El porqué de las zapatillas</p>
+    <blockquote cite="https://es.wikipedia.org/wiki/Zapatilla">
+        La palabra zapatilla puede referirse al calzado cómodo o de abrigo para estar en casa
+    </blockquote>
+
+    <!-- Tarjetas de productos usando div class="card" -->
+    <div class="card">
+        <img src="imagenes/zapatoh1.jpg" width="160" height="164" alt="tennis rojos">
+        <h4>Nike Running rojos</h4>
+        <p class="valor">$154.999</p>
+        <p>Tennis para correr</p>
+        <p><button>Adicionar al carro</button></p>
+    </div>
+
+    <!-- (Ejemplo de estructura adicional basada en el contenido) -->
+    <div class="card">
+        <img src="imagenes/zapatoh2.jpg" width="160" height="164" alt="tennis blancos">
+        <h4>Nike Running blancos</h4>
+        <p class="valor">$155.999</p>
+        <p>Tennis para caminar</p>
+        <p><button>Adicionar al carro</button></p>
+    </div>
+
+    <div class="card">
+        <img src="imagenes/zapatoh3.jpg" width="160" height="164" alt="tennis azul">
+        <h4>Nike basketball azul</h4>
+        <p class="valor">$164.999</p>
+        <p>Tennis para baloncesto</p>
+        <p><button>Adicionar al carro</button></p>
+    </div>
+
+    <h2>Calzado para dama</h2>
+    <h2>Deportivos para niño</h2>
+
+    <h2>Sección de Ropa</h2>
+
+    <!-- Formulario -->
+    <form action="action_page.php" method="get">
+        <label for="nombreC">Nombre completo</label><br>
+        <input type="text" id="nombreC" name="nombreC" placeholder="Nombres y apellidos" required><br><br>
+
+        <label for="zapatoab">Zapato que no encontraste:</label><br>
+        <input type="text" id="zapatoab" name="zapatoab"><br><br>
+
+        <input type="radio" id="zapatoh" name="tzapato" value="hombre">
+        <label for="zapatoh">Hombre</label><br>
+        <input type="radio" id="zapatom" name="tzapato" value="mujer">
+        <label for="zapatom">Mujer</label><br>
+        <input type="radio" id="zapaton" name="tzapato" value="nino">
+        <label for="zapaton">Niño</label><br><br>
+
+        <input type="submit" value="Solicitar">
+    </form>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Autores: Desarrolladores SENA</p>
+        <p><a href="#">TuTiendaVirtual.com</a></p>
+    </footer>
+
+</body>
+</html>
